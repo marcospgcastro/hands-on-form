@@ -61,7 +61,7 @@ export const SubtitleLogin = styled.p`
 export const InformeText =  styled.p`
     font-family: 'Open-Sans';
     font-style: normal;
-    font-weight: 250;
+    font-weight: 180;
     font-size: 18px;
     line-height: 24px;
     margin-top: 40px;
@@ -76,7 +76,7 @@ export const LoginText =  styled.p`
 export const TheCalling = styled.p`
     font-family: 'Open-Sans';
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     margin-top: 20px;
