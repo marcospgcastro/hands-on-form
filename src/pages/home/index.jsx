@@ -19,9 +19,12 @@ const Home = () => {
                     <TitleHighlight>
                         Implemente <br />
                     </TitleHighlight>
-                O seu futuro global agora!</Title>
-                <TextContent>Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo
-                     desafio profissional, evoluindo em comunidade com os melhores profissionais.</TextContent>
+                    O seu futuro global agora!
+                </Title>
+                <TextContent>
+                    Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo 
+                    desafio profissional, evoluindo em comunidade com os melhores profissionais.
+                </TextContent>
                 <Button title="Comece agora!" variant="secondary" onClick={handleClickSignIn}/>
             </div>
             <div>

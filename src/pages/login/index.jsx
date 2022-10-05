@@ -60,8 +60,8 @@ const Login = () => {
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    <EsqueciText onClick={handleClickRescue}>Esqueci minha senha</EsqueciText>
-                    <CriarText onClick={handleClickAddUser}>Criar Conta</CriarText>
+                    <EsqueciText onClick={handleClickRescue}>Recuperar senha</EsqueciText>
+                    <CriarText onClick={handleClickAddUser}>Criar conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
