@@ -13,7 +13,12 @@ import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, Criar
 const Login = () => {
 
     const navigate = useNavigate()
-
+    const handleClickAddUser = () => {
+      navigate('/cadastro')
+    }
+    const handleClickRescue = () => {
+        alert('Entre em contato com nossa equipe por: suporte@email.com')
+    }
     const { control, handleSubmit, formState: { errors  } } = useForm({
         reValidateMode: 'onChange',
         mode: 'onChange',
@@ -45,8 +50,8 @@ const Login = () => {
             </Column>
             <Column>
                 <Wrapper>
-                <TitleLogin>Faça seu cadastro</TitleLogin>
-                <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
+                <TitleLogin>Cadastre-se!</TitleLogin>
+                <SubtitleLogin>Faça seu login e make the change.</SubtitleLogin>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
                     {errors.email && <span>E-mail é obrigatório</span>}
@@ -55,8 +60,8 @@ const Login = () => {
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <EsqueciText onClick={handleClickRescue}>Esqueci minha senha</EsqueciText>
+                    <CriarText onClick={handleClickAddUser}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
