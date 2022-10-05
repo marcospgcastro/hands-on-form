@@ -2,7 +2,7 @@ import { useNavigate  } from "react-router-dom";
 import bannerImage from '../../assets/banner.png'
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
-import { Container, Title, TitleHighlight, TextContent } from './styles';
+import { Container, Title, TitleHighlight,Limiter, TextContent } from './styles';
 
 const Home = () => {
 
@@ -25,7 +25,9 @@ const Home = () => {
                     Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo 
                     desafio profissional, evoluindo em comunidade com os melhores profissionais.
                 </TextContent>
-                <Button title="Comece agora!" variant="secondary" onClick={handleClickSignIn}/>
+                <Limiter>
+                    <Button title="Comece agora!" variant="secondary" onClick={handleClickSignIn}/>
+                </Limiter>
             </div>
             <div>
                 <img src={bannerImage} alt="Imagem principal do site." />

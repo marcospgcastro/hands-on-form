@@ -24,7 +24,7 @@ const Header = ({autenticado}) => {
             {autenticado ? (
               <>
                <BuscarInputContainer>
-                <Input placeholder='Buscar...'/>
+                  <Input placeholder='Buscar...'/>
                </BuscarInputContainer>
                 <Menu>Live Code</Menu>
                 <Menu>Global</Menu>
@@ -35,11 +35,12 @@ const Header = ({autenticado}) => {
               {autenticado ? (
                 <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4"/>
               ) : (
-              <>
+              <>  
                 <MenuRight href="/">Home</MenuRight>
                 <Button title="Entrar" onClick={handleClickSignIn}/>
                 <Button title="Cadastrar" onClick={handleClickAddUser}/>
-              </>)}
+              </>  
+              )}
           </Row>
       </Container>
     </Wrapper>

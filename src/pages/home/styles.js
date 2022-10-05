@@ -16,7 +16,7 @@ export const Title = styled.h2`
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    width: 320px;
+    width: 600px;
     margin-bottom: 20px;
     line-height: 44px;
     color: #FFFFFF;
@@ -27,12 +27,18 @@ export const TitleHighlight = styled.span`
 `
 
 export const TextContent = styled.p`
-    font-family: 'Open-Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 40;
     font-size: 18px;
-    line-height: 22px;
-    width: 420px;
-    margin-bottom: 20px;
+    line-height: 32px;
+    width: 560px;
+    margin-top: 40px;
     color: #FFFFFF;
+`
+export const Limiter = styled.div`
+    font-family: 'Open-Sans';
+    font-size: 24px;
+    margin-top: 40px;
+    max-width: 300px;
 `

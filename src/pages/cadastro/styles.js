@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
 
 export const Column = styled.div`
     flex: 1;
+    margin-left: 140px;
 `
 
 export const Row = styled.div`
