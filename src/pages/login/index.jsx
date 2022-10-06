@@ -40,9 +40,9 @@ const { control, handleSubmit, formState: { errors /*, isValid*/  } } = useForm(
                 return
             }
 
-            alert('Usuário ou senha inválido')
         }catch(errors){
-            //console.log('errors', errors);
+            alert('Usuário ou senha inválido')
+            console.error(errors)
         }
     };
     //console.log(isValid, errors);
