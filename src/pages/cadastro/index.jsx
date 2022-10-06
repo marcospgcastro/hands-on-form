@@ -21,12 +21,13 @@ const AddUser = () => {
 
   const onSubmit = async (formData) => {
     try{
-    return await api.post('users', `nome=${formData.nome}&email=${formData.email}&senha=${formData.senha}`);   
-  
-    }catch(erro){
+      return await api.post('users',`nome=${formData.nome}&email=${formData.email}&senha=${formData.senha}`);
+    } catch(erro) {
       alert('Cadastro de novo usuário não realizado')
       console.error(erro)
-    }
+    } finally {
+      alert(`Usuário ${formData.nome} cadastrado com sucesso!`)
+    } 
   };
 
   return (

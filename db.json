@@ -17,6 +17,18 @@
       "email": "marcospaulo@email.com",
       "senha": "123456",
       "id": 3
+    },
+    {
+      "nome": "Caio",
+      "email": "caio@email.com",
+      "senha": "123456",
+      "id": 4
+    },
+    {
+      "nome": "Caio Vinícios",
+      "email": "caiovinicios@email.com",
+      "senha": "123456",
+      "id": 5
     }
   ]
 }
