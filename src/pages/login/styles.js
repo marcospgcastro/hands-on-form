@@ -13,22 +13,23 @@ export const Container = styled.main`
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 600px;
 `
 
 export const Column = styled.div`
     flex: 1;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 600px;
+    align-items: center;
 `
 
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 `
-
-
 
 export const Title = styled.h2`
     font-family: 'Open-Sans';
@@ -55,8 +56,8 @@ export const SubtitleLogin = styled.p`
     font-family: 'Open-Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 30px;
     margin-bottom: 35px;
 `
 
@@ -67,8 +68,14 @@ export const EsqueciText  = styled.p`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
+    margin-right: 20px;
+    margin-left: 25px;
     color: #FFFFFF70;
+
+    &:hover{
+        color: #E4105D;
+        cursor: pointer;
+    }
 ` 
 
 export const CriarText =  styled.p`
@@ -77,6 +84,14 @@ export const CriarText =  styled.p`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
     color: #FFFFFF70;
+
+    &:hover{
+        color: #E4105D;
+        cursor: pointer;
+    }
+`
+export const EntrarBottom = styled.div`
+    margin-top: 40px;
+    max-width: 300px;
 `

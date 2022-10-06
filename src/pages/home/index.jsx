@@ -2,7 +2,7 @@ import { useNavigate  } from "react-router-dom";
 import bannerImage from '../../assets/banner.png'
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
-import { Container, Title, TitleHighlight,Limiter, TextContent } from './styles';
+import { Container, Title, TitleHighlight,Limiter, Row, Column, TextContent } from './styles';
 
 const Home = () => {
 
@@ -14,7 +14,8 @@ const Home = () => {
     return (<>
         <Header />
         <Container>
-            <div>
+          <Row>  
+            <Column>
                 <Title>
                     <TitleHighlight>
                         Implemente <br />
@@ -28,10 +29,13 @@ const Home = () => {
                 <Limiter>
                     <Button title="Comece agora!" variant="secondary" onClick={handleClickSignIn}/>
                 </Limiter>
-            </div>
-            <div>
+            </Column>
+
+            <Column>
                 <img src={bannerImage} alt="Imagem principal do site." />
-            </div>
+            </Column>
+
+          </Row>  
         </Container>
     </>)
 }

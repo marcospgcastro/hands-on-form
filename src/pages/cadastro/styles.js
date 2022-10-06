@@ -8,7 +8,7 @@ export const Container = styled.main`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
 `
 
 export const Wrapper = styled.div`
@@ -17,7 +17,10 @@ export const Wrapper = styled.div`
 
 export const Column = styled.div`
     flex: 1;
-    margin-left: 140px;
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 600px;
+    align-items: center;
 `
 
 export const Row = styled.div`
@@ -35,6 +38,7 @@ export const Title = styled.h2`
     font-weight: 700;
     font-size: 32px;
     max-width: 90%;
+    margin-top: 22px;
     margin-bottom: 20px;
     line-height: 44px;
 
@@ -54,7 +58,7 @@ export const SubtitleLogin = styled.p`
     font-family: 'Open-Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     margin-bottom: 35px;
 `
@@ -73,9 +77,14 @@ export const InformeText =  styled.p`
 export const LoginText =  styled.p`
     margin-left: 10px;
     color: #E4105D;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
 `
 export const TheCalling = styled.p`
-    font-family: 'Open-Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
