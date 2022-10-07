@@ -1,52 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Marcos",
+      "nome": "Marcos",
+      "email": "mpgc@email.com",
+      "senha": "123",
+      "id": 1
+    },
+    {
+      "nome": "Marcos",
       "email": "marcos@email.com",
-      "senha": "123456"
-    },
-    {
-      "id": 2,
-      "name": "Paulo",
-      "email": "paulo@email.com",
-      "senha": "123456"
-    },
-    {
-      "nome": "Marcos Paulo",
-      "email": "marcospaulo@email.com",
-      "senha": "123456",
-      "id": 3
-    },
-    {
-      "nome": "Caio",
-      "email": "caio@email.com",
-      "senha": "123456",
-      "id": 4
-    },
-    {
-      "nome": "Caio Vinícios",
-      "email": "caiovinicios@email.com",
-      "senha": "123456",
-      "id": 5
-    },
-    {
-      "nome": "Marcos Castro",
-      "email": "marcoscastro@email.com",
-      "senha": "123456",
-      "id": 6
-    },
-    {
-      "nome": "Paulo Gomes",
-      "email": "paulogomes@email.com",
-      "senha": "123456",
-      "id": 7
-    },
-    {
-      "nome": "Gomes de Castro",
-      "email": "gdc@email.com",
-      "senha": "123456",
-      "id": 8
+      "senha": "123",
+      "id": 2
     }
   ]
 }
