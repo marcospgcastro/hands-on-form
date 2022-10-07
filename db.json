@@ -29,6 +29,24 @@
       "email": "caiovinicios@email.com",
       "senha": "123456",
       "id": 5
+    },
+    {
+      "nome": "Marcos Castro",
+      "email": "marcoscastro@email.com",
+      "senha": "123456",
+      "id": 6
+    },
+    {
+      "nome": "Paulo Gomes",
+      "email": "paulogomes@email.com",
+      "senha": "123456",
+      "id": 7
+    },
+    {
+      "nome": "Gomes de Castro",
+      "email": "gdc@email.com",
+      "senha": "123456",
+      "id": 8
     }
   ]
 }

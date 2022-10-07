@@ -26,8 +26,8 @@ const AddUser = () => {
       alert('Cadastro de novo usuário não realizado')
       console.error(erro)
     } finally {
-      alert(`Usuário ${formData.nome} cadastrado com sucesso!`)
-    } 
+      navigate('/login')
+    }  
   };
 
   return (
@@ -42,19 +42,22 @@ const AddUser = () => {
               <Wrapper>
                 <TitleLogin>Comece agora grátis</TitleLogin>
                 <SubtitleLogin>Crie sua conta e make the change.</SubtitleLogin>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <Input placeholder="Nome Completo" leftIcon={<MdPerson />} name="nome"  control={control} />
-                    {errors.nome && <span>Nome é obrigatório</span>}
+                    <Input type="text" placeholder="Nome Completo" leftIcon={<MdPerson />} name="nome" control={control} />
+                        {errors.nome && <span>Nome é obrigatório</span>}
 
-                    <Input placeholder="Seu melhor e-mail" leftIcon={<MdEmail />} name="email"  control={control} />
-                    {errors.email && <span>E-mail é obrigatório</span>}
+                    <Input type="email" placeholder="Seu melhor e-mail" leftIcon={<MdEmail />} name="email" control={control} />
+                        {errors.email && <span>E-mail é obrigatório</span>}
 
-                    <Input type="password" placeholder="Uma boa senha" leftIcon={<MdLock />}  name="senha" control={control} />
-                    {errors.senha && <span>Senha é obrigatória</span>}
+                    <Input type="password" placeholder="Uma boa senha" leftIcon={<MdLock />} name="senha" control={control} />
+                        {errors.senha && <span>Senha é obrigatória</span>}
+
                     <Row>
                       <Button title="Entrar" variant="secondary" type="submit"/>
                     </Row>
                 </form>
+
                 <InformeText >
                   Ao clicar em "Criar conta grátis", declaro que aceito as Política de Privacidade e os Termos da Dio.
                 </InformeText>
