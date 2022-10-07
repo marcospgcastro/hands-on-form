@@ -4,6 +4,7 @@ import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 import { api } from '../../services/api';
+import React from 'react'
 import { useForm } from "react-hook-form";
 import { Container, Title, Column, TitleLogin, SubtitleLogin, InformeText, Row, LoginText, TheCalling, Wrapper } from './styles';
 
@@ -14,10 +15,21 @@ const AddUser = () => {
     navigate('/login')
   }
 
-  const { control, handleSubmit, formState: { errors  } } = useForm({
+  const { control, handleSubmit, reset, formState,  formState: { errors } } = useForm({
+      defaultValues: { something: "anything" },
       reValidateMode: 'onChange',
       mode: 'onChange',
   });
+
+  React.useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({ 
+        nome: '',
+        email: '',
+        senha: ''
+      });
+    }
+  }, [formState, reset]);
 
   const onSubmit = async (formData) => {
     try{
@@ -26,7 +38,7 @@ const AddUser = () => {
       alert('Cadastro de novo usuário não realizado')
       console.error(erro)
     } finally {
-      navigate('/login')
+      console.log(`nome=${formData.nome}, email=${formData.email}, senha=${formData.senha}`)
     }  
   };
 
